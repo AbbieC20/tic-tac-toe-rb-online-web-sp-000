@@ -156,19 +156,8 @@ def winner(board)
   end
 end
 
-
 def play(board)
-  turn_count = 0
   until over?(board) == true
     turn(board)
-    turn_count += 1
-  end
-end
-
-def over?(board)
-  if won?(board) != nil || draw?(board) == true
-    return true
-  else
-    return false
   end
 end
