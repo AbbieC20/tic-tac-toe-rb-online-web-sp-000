@@ -161,7 +161,7 @@ def play(board)
   until over?(board)
     turn(board)
   end
-  if won?(board) != nil
+  if won?(board) != false
     puts "Congratulations #{winner(board)}!"
   elsif draw?(board) == true
     puts "Cat's Game!"
