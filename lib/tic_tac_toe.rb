@@ -158,10 +158,8 @@ end
 
 
 def play(board)
-  game_over = false
-  while game_over == false
+  while over?(board) == false
     turn(board)
-    game_over = over?(board)
   end
   if won?(board) != nil
     puts "Congratulations #{winner(board)}!"
