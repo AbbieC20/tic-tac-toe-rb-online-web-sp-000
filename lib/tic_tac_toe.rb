@@ -159,7 +159,7 @@ end
 
 def play(board)
   game_over = false
-  while !game_over
+  while game_over == false
     turn(board)
     game_over = over?(board)
   end
