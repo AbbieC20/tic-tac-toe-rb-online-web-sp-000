@@ -160,6 +160,7 @@ end
 def play(board)
   until over?(board) == true
     turn(board)
+    winning_player = winner(board)
   end
 end
 
