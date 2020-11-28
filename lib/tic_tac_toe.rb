@@ -162,9 +162,10 @@ def play(board)
     turn(board)
   end
   if won?(board) == true
-    print "Congratulations winner!" 
+    print "Congratulations winner!"
   elsif draw?(board) == true
     print "Cat's Game!"
+  end
 end
 
 
