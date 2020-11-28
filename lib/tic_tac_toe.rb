@@ -108,7 +108,6 @@ end
 
 
 def won?(board)
-  puts "Checking if won"
   WIN_COMBINATIONS.each do |win_combination|
      #because this is a loop, it will move through all hypothetical arrays
     if line_taken?(board, win_combination) == true && matching_values?(board, win_combination) == true
