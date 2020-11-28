@@ -148,7 +148,7 @@ end
 
 def winner(board)
   win_combination = won?(board)
-  if win_combination != nil
+  if win_combination != false
     winning_position = win_combination[0]
     return board[winning_position]
   else
