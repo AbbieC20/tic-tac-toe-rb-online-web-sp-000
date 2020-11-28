@@ -160,7 +160,6 @@ end
 def play(board)
   until over?(board) == true
     turn(board)
-    has_won = won?(board)
   end
 end
 
