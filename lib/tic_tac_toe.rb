@@ -161,6 +161,10 @@ def play(board)
   until over?(board) == true
     turn(board)
   end
+  if won?(board) == true
+    print "Congratulations" 
+  elsif draw?(board) == true
+    print "Cat's Game!"
 end
 
 
