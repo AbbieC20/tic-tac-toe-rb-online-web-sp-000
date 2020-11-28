@@ -167,9 +167,3 @@ def play(board)
     print "Cat's Game!"
   end
 end
-
-
-# checks if the game is won after every turn
-# congratulate X
-# congratulate O
-# prints "Cat's Game!" on a draw
