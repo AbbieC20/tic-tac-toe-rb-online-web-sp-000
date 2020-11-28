@@ -66,6 +66,7 @@ def turn(board)
   if valid_move?(board, index)
     player = current_player(board)
     move(board, index, player)
+    won?(board)
     display_board(board)
   else
     turn(board)
