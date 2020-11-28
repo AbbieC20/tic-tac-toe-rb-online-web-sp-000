@@ -164,7 +164,7 @@ def play(board)
   if won?(board) == true
     return "Congratulations winner!"
   elsif draw?(board) == true
-    return "Cat's Game!"
+    print "Cat's Game!"
   end
 end
 
