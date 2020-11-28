@@ -156,11 +156,13 @@ def winner(board)
   end
 end
 
+
 def play(board)
-  until over?(board) == true
+  until over?(board) == true || won?(board) != nil
     turn(board)
   end
 end
+
 
 # checks if the game is won after every turn
 # congratulate X
